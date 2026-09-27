@@ -44,7 +44,7 @@ namespace Fighting.Server
       this.ServerName = ConfigurationSettings.AppSettings["ServerName"];
       this.Port = int.Parse(ConfigurationSettings.AppSettings["Port"]);
       this.ScriptAssemblies = ConfigurationSettings.AppSettings["ScriptAssemblies"];
-      this.ScriptCompilationTarget = ConfigurationSettings.AppSettings["ScriptAssemblies"];
+      this.ScriptCompilationTarget = ConfigurationSettings.AppSettings["ScriptCompilationTarget"];
       this.ZoneId = int.Parse(ConfigurationSettings.AppSettings["ServerID"]);
       this.RootDirectory = new FileInfo(Assembly.GetEntryAssembly().Location).DirectoryName;
     }
